@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  max-width: 1050px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  animation: fadeInAnimation ease 1.5s;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
