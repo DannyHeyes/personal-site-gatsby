@@ -51,10 +51,14 @@
       background-color: #666666;
       color: #fff;
       text-align: center;
+      border: none;
+      border-radius: 5px;
+      height: 40px;
+      width: 125px;
     }
 
     button:hover {
-      background-color: #cfcfcf;
+      background-color: #bdbdbd;
     }
   }
 }
