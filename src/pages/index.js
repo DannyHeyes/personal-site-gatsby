@@ -41,8 +41,8 @@ const Index = () => {
         </div>
 
         <div>
-          <h1><span>I'm Danny</span> - a Frontend Developer based in Italy. With a strong focus on UI Engineering, I build fast and 
-          user-oriented sites that propel start-ups to the forefront in good customer experiences. </h1>
+          <h1><span>I'm Danny</span> - a Frontend Developer based in Italy. I focus on building fast, responsive sites with a strong focus on UI and UX design, helping propel small
+          businesses to the forefront of good customer experience on the web. </h1>
         </div>
 
         <div className={skillsDiv}>

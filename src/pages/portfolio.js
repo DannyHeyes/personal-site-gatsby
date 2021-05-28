@@ -27,7 +27,7 @@ const Portfolio = () => {
     return ( 
         <PageLayout>
             <h2>Current Portfolio</h2>
-            <p>Includes full projects as well as small projects to highlight micro-interactions that can be applied. </p>
+            <p>This includes single page sites, as well as small micro-projects which can be included into bigger pages. </p>
 
             <div className={galleryWrapper}>
                 {projects.map(project => (
