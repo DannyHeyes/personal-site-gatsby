@@ -7,18 +7,26 @@ import { galleryWrapper,  container, overlayDiv } from '../styles/portfolio.modu
 const projects = [
     {
         "id": 1,
-        title: "JS Accordion page, highlighting how FAQs can be added to a page."
+        title: "Infinite scroll page using Unsplash API."
     },
     {
         "id": 2,
-        title: "Coming soon page for clothing company with custom email validation."
+        title: "Simple dark mode page toggler using local storage for keeping theme."
     },
-    {   
+    {
         "id": 3,
-        title: "Showing multiple reviews using CSS grid to create a mosaic effect."
+        title: "JS Accordion page, highlighting how FAQs can be added to a page."
     },
     {
         "id": 4,
+        title: "Coming soon page for clothing company with custom email validation."
+    },
+    {   
+        "id": 5,
+        title: "Showing multiple reviews using CSS grid to create a mosaic effect."
+    },
+    {
+        "id": 6,
         title: "Article preview using eventListener on share button displaying custom tooltip."
     }
 ]
