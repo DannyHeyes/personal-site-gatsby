@@ -34,8 +34,8 @@ const projects = [
 const Portfolio = () => {
     return ( 
         <PageLayout>
-            <h2>Current Portfolio</h2>
-            <p>This includes single page sites, as well as small micro-projects which can be included into bigger pages. </p>
+            <h2>My Portfolio</h2>
+            <p>This includes single page sites, as well as small micro-projects which can be included into bigger pages. Source codes for these projects can be found on my <a href="https://github.com/dannyheyes">Github</a> </p>
 
             <div className={galleryWrapper}>
                 {projects.map(project => (
