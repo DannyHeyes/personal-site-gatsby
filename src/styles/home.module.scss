@@ -4,6 +4,13 @@
   }
 }
 
+// 800px Breakpoint
+@mixin sm-pc {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}
+
 @mixin imgBreak {
   @media screen and (min-width: 600px) {
     @content;
@@ -74,7 +81,13 @@
     .cardWrapper {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
+
+      @include sm-pc() {
+        justify-content: flex-start;
+        gap: 20px;
+      }
 
       h3 {
         margin: 10px 0;

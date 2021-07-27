@@ -11,22 +11,29 @@ import Profile from '../assets/profile.jpg';
 const cards = [
   {
     "id": 1,
-    "title": "Simple Blog Template",
-    "information": "Simple blog template built with React/Gatsby, Sass and uses Contentful CMS for content creation. Includes uses of GraphQL for fetching Contentful data.",
-    "link": "https://cranky-lalande-1bd987.netlify.app/"
+    "title": "RDW Joinery Services",
+    "information": "Custom multi-page site for specialist joinery client. Site is built using React, and uses Sass for styling. Dependency includes react-router-dom for routing.",
+    "link": "https://rdwjoinery.com"
+
   },
   {
     "id": 2,
-    "title": "Poe & Hund Tailors",
-    "information": "Static landing site for the Client, an independent Tailor. Built to increase their brand reach to potential customers. Simple HTML and CSS. ",
-    "link": "https://poeandhund.com"
+    "title": "Simple Blog Template",
+    "information": "Simple blog template built with React/Gatsby, Sass and uses Contentful CMS for content creation. Includes uses of GraphQL for fetching Contentful data.",
+    "link": "https://cranky-lalande-1bd987.netlify.app/"
   },
   {
     "id": 3,
     "title": "Shortly URL Shortener",
     "information": "URL shortener site, using axios for http requests to a shortener APi. Styled with Sass and built with React/Gatsby using React Hooks to store returned data and display it.",
     "link": "https://tender-yalow-7fb95f.netlify.app/"
-  }
+  },
+  // {
+  //   "id": 4,
+  //   "title": "Poe & Hund Tailors",
+  //   "information": "Static landing page for Independent Tailor. The client wanted a simple site to increase their online presence to reach more potential customers.",
+  //   "link": "https://poeandhund.com"
+  // }
 ]
 
 

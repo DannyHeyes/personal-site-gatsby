@@ -6,6 +6,10 @@ import { galleryWrapper,  container, overlayDiv } from '../styles/portfolio.modu
 
 const projects = [
     {
+        "id": 7,
+        title: "Simple landing page for client, an Independent Tailor. Built with HTML and CSS."
+    },
+    {
         "id": 1,
         title: "Infinite scroll page using Unsplash API."
     },
@@ -29,6 +33,7 @@ const projects = [
         "id": 6,
         title: "Article preview using eventListener on share button displaying custom tooltip."
     }
+    
 ]
 
 const Portfolio = () => {

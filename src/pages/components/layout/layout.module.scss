@@ -1,5 +1,19 @@
+// 800px Breakpoint
+@mixin sm-pc {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+// 1140px Breakpoint
+@mixin lg-pc {
+  @media screen and (min-width: 1140px) {
+    @content;
+  }
+}
+
 .container {
-  margin: 0 auto;
+  margin: 0 15px;
   max-width: 1050px;
   padding: 1rem;
 
@@ -8,6 +22,16 @@
   min-height: 100vh;
 
   animation: fadeInAnimation ease 1.5s;
+
+  // 800px Breakpoint -------------------------
+  @include sm-pc() {
+    margin: 0 40px;
+  }
+
+  // 1140px Breakpoint ------------------------
+  @include lg-pc() {
+    margin: 0 auto;
+  }
 }
 
 .content {
