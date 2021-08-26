@@ -24,9 +24,9 @@ const cards = [
   },
   {
     "id": 3,
-    "title": "Shortly URL Shortener",
-    "information": "URL shortener site, using axios for http requests to a shortener APi. Styled with Sass and built with React/Gatsby using React Hooks to store returned data and display it.",
-    "link": "https://tender-yalow-7fb95f.netlify.app/"
+    "title": "VCR Fulfillment",
+    "information": "Client site for an office subscription coffee site. Single page site built with React. Dependencies include smooth-scroll.  ",
+    "link": "https://www.vcrfulfillment.com"
   },
   // {
   //   "id": 4,
