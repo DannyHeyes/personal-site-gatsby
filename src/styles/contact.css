@@ -5,6 +5,7 @@
 
 .contactWrapper h1 {
   font-family: var(--heading-font);
+  font-size: 40px;
 }
 
 .socialIcons {
@@ -63,4 +64,29 @@ form button {
 
   padding: 15px 5px;
   margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1440px) {
+  .contactWrapper .content {
+    display: unset;
+    width: 1110px;
+  }
+
+  .contactWrapper main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main p {
+    width: 635px;
+  }
+
+  form {
+    width: 635px;
+  }
+
+  .contactWrapper section {
+    display: flex;
+    justify-content: space-between;
+  }
 }

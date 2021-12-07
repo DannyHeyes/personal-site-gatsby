@@ -41,9 +41,10 @@ const Contact = () => {
     return (
         <div className="contactWrapper">
         <IndexLayout>
-            <main>
                 <StyledHr/>
+            <main>
                 <h1>Get in Touch</h1>
+                <div className='desktopWrapper'>
                 <p>{danny.contact} <br /> {danny.contact2}</p>
                 <div className="socialIcons">
                     <a target="_blank" href="https://github.com/dannyheyes">
@@ -59,30 +60,32 @@ const Contact = () => {
                         <img src={Linkedin} alt="" />   
                     </a>    
                 </div>
-                <StyledHr/>
+                </div>
             </main>
+                <StyledHr/>
             
-            <h1>Contact Me</h1>
-            <form onSubmit={handleSubmit}>
-                        <div className="formGroup">
-                            <label htmlFor="name">Name:</label>
-                            <input type="text" name="name" placeholder="John Doe"/>
-                        </div>
-                        <div className="formGroup">
-                            <label htmlFor="email">Email Address:</label>
-                            <input type="email" name="email" placeholder="example@example.com" />
-                            <ValidationError prefix="Email" field="email" errors={state.errors}/>
-                        </div>
-                        <div className="formGroup">
-                            <label htmlFor="message">Message:</label>
-                            <textarea name="message" cols="30" rows="10" placeholder="How can I help?"></textarea>
-                            <ValidationError prefix="Message" field="message" errors={state.errors}/>
-                        </div>
-                        <SubmitBtn disabled={state.submitting}>
-                            send message
-                        </SubmitBtn>
-                        
-                    </form>
+            <section>
+                <h1>Contact Me</h1>
+                <form onSubmit={handleSubmit}>
+                    <div className="formGroup">
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" name="name" placeholder="John Doe"/>
+                    </div>
+                    <div className="formGroup">
+                        <label htmlFor="email">Email Address:</label>
+                        <input type="email" name="email" placeholder="example@example.com" />
+                        <ValidationError prefix="Email" field="email" errors={state.errors}/>
+                    </div>
+                    <div className="formGroup">
+                        <label htmlFor="message">Message:</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="How can I help?"></textarea>
+                        <ValidationError prefix="Message" field="message" errors={state.errors}/>
+                    </div>
+                    <SubmitBtn disabled={state.submitting}>
+                        send message
+                    </SubmitBtn>
+                </form>
+            </section>
         </IndexLayout>
         </div> 
      );
