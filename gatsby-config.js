@@ -6,17 +6,18 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Danny Heyes | Web Developer",
-    description: "A front-end web develop for hire. Specialised in making sites to bring start-ups to the web.",
+    title: "Danny Heyes | Frontend Developer",
+    description: "Portfolio site of Danny Heyes, a Frontend Developer on the look out for exciting new opportunities.",
     author: "Danny Heyes"
   },
   plugins: [
-    'gatsby-plugin-sass',
+    'gatsby-plugin-smoothscroll',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          'Poppins'
+          'Ibarra Real Nova',
+          'Public Sans'
         ],
         display: 'swap'
       }

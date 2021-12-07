@@ -1,0 +1,33 @@
+.rdwWrapper header {
+  background-image: url("../../assets/mobile/rdw-hero.jpg");
+}
+
+.rdwWrapper .previewOne {
+  background-image: url("../../assets/mobile/rdw-preview-one.jpg");
+}
+.rdwWrapper .previewTwo {
+  background-image: url("../../assets/mobile/rdw-preview-two.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .rdwWrapper section {
+    flex-direction: unset;
+  }
+
+  .rdwWrapper header {
+    background-image: url("../../assets/tablet/rdw-hero.jpg");
+  }
+
+  .rdwWrapper .previewOne {
+    background-image: url("../../assets/tablet/rdw-preview-one.jpg");
+  }
+  .rdwWrapper .previewTwo {
+    background-image: url("../../assets/tablet/rdw-preview-two.jpg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rdwWrapper header {
+    background-image: url("../../assets/desktop/rdw-hero.jpg");
+  }
+}

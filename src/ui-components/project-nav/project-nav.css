@@ -1,0 +1,47 @@
+.rotated {
+  height: 148px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn p {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.btn span {
+  font-family: var(--body-font);
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.btnLeft {
+  border: 1px solid #97979760;
+  border-left: none;
+  border-right: 1px;
+}
+
+.btnRight {
+  border: 1px solid #97979760;
+  border-right: none;
+  text-align: right;
+}
+
+@media screen and (min-width: 1440px) {
+  .navigationDiv {
+    width: 100%;
+  }
+}

@@ -1,0 +1,157 @@
+:root {
+  --heading-font: "Ibarra Real Nova";
+  --body-font: "Public Sans";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #364532;
+
+  scroll-behavior: smooth;
+}
+
+.main {
+  padding-bottom: 64px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.mainBgHero {
+  width: 311px;
+  height: 271px;
+  background-image: url("../assets/mobile/hero-bg.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.mainContent h1 {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -0.45px;
+}
+
+.mainContent a {
+  text-decoration: none;
+}
+
+.about {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.about h1 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  margin: 32px 0;
+}
+
+.about p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about button {
+  margin: 30px 0;
+}
+
+.profileImg {
+  background-image: url("../assets/mobile/profile-image.jpg");
+  background-size: cover;
+
+  height: 346px;
+  width: 311px;
+
+  margin: 32px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: unset;
+    width: 688px;
+    height: 600px;
+    padding-bottom: 96px;
+
+    position: relative;
+  }
+
+  .mainBgHero {
+    width: 688px;
+    height: 600px;
+    background-image: url("../assets/tablet/hero-bg.jpg");
+  }
+
+  .mainContent {
+    width: 514px;
+    height: 278px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 96px;
+    background-color: #fff;
+  }
+
+  .about {
+    max-width: unset;
+    width: 688px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about h1 {
+    margin-top: 50px;
+  }
+
+  .about button {
+    margin: 48px 0;
+  }
+
+  .profileImg {
+    height: 600px;
+    width: 289px;
+    margin: 0;
+    background-image: url("../assets/tablet/profile-image.jpg");
+  }
+
+  .profileContent {
+    width: 339px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    width: 100%;
+    max-width: 1110px;
+  }
+
+  .mainBgHero {
+    width: 1110px;
+    background-image: url("../assets/desktop/hero-bg.jpg");
+    background-position: center;
+  }
+
+  .mainContent {
+    width: 480px;
+  }
+
+  .mainContent h1 {
+    font-size: 50px;
+  }
+
+  .about {
+    width: 1110px;
+  }
+
+  .profileImg {
+    width: 540px;
+    background-image: url("../assets/desktop/profile-image.jpg");
+  }
+}

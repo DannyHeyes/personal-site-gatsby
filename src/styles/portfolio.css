@@ -1,0 +1,46 @@
+.portfolioWrapper {
+  display: grid;
+  gap: 65px;
+  padding-bottom: 40px;
+}
+
+.vcrWrapper .indexImg {
+  background-image: url("../assets/mobile/vcr-index.jpg");
+}
+
+.clockWrapper .indexImg {
+  background-image: url("../assets/mobile/clock-index.jpg");
+}
+
+.insureWrapper .indexImg {
+  background-image: url("../assets/mobile/insure-index.jpg");
+}
+
+.rdwWrapper .indexImg {
+  background-image: url("../assets/mobile/rdw-index.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .clockWrapper section,
+  .rdwWrapper section {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .vcrWrapper .indexImg {
+    background-image: url("../assets/desktop/vcr-index.jpg");
+  }
+
+  .clockWrapper .indexImg {
+    background-image: url("../assets/desktop/clock-index.jpg");
+  }
+
+  .insureWrapper .indexImg {
+    background-image: url("../assets/desktop/insure-index.jpg");
+  }
+
+  .rdwWrapper .indexImg {
+    background-image: url("../assets/desktop/rdw-index.jpg");
+  }
+}

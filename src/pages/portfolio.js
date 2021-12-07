@@ -1,60 +1,56 @@
 import React from 'react';
-import { GalleryCard } from './components/card/card';
-import PageLayout from './components/layout/layout';
+import IndexLayout from './../layouts/index/index-layout';
+import StyledHr from './../ui-components/styled-hr/hr';
 
-import { galleryWrapper,  container, overlayDiv } from '../styles/portfolio.module.scss'
+import { vcr, clock, insure, rdw } from '../data/portfolio';
+import { PrimaryBtn } from '../ui-components/buttons/buttons';
 
-const projects = [
-    {
-        "id": 7,
-        title: "Simple landing page for client, an Independent Tailor. Built with HTML and CSS."
-    },
-    {
-        "id": 1,
-        title: "Infinite scroll page using Unsplash API."
-    },
-    {
-        "id": 2,
-        title: "Simple dark mode page toggler using local storage for keeping theme."
-    },
-    {
-        "id": 3,
-        title: "JS Accordion page, highlighting how FAQs can be added to a page."
-    },
-    {
-        "id": 4,
-        title: "Coming soon page for clothing company with custom email validation."
-    },
-    {   
-        "id": 5,
-        title: "Showing multiple reviews using CSS grid to create a mosaic effect."
-    },
-    {
-        "id": 6,
-        title: "Article preview using eventListener on share button displaying custom tooltip."
-    }
-    
-]
+import '../styles/portfolio.css';
+import { Link } from 'gatsby';
+import CtaSection from '../ui-components/cta-section/cta-section';
+import PortfolioIndexCard from '../ui-components/cards/cards';
 
 const Portfolio = () => {
     return ( 
-        <PageLayout>
-            <h2>My Portfolio</h2>
-            <p>This includes single page sites, as well as small micro-projects which can be included into bigger pages. Source codes for these projects can be found on my <a href="https://github.com/dannyheyes" target="_blank">Github</a> </p>
+        <IndexLayout>
+        <div className="portfolioWrapper">
 
-            <div className={galleryWrapper}>
-                {projects.map(project => (
-                    <GalleryCard>
-                    <div className={container}>
-                        <img src={require(`../assets/gallery/gallery-${project.id}.png`).default} alt="" />
-                        <div className={overlayDiv}>
-                            <p>{project.title}</p>
-                        </div>
-                    </div>
-                    </GalleryCard>
-                ))}
+            <section className="vcrWrapper">
+                <PortfolioIndexCard 
+                title={vcr.title}
+                information={vcr.information}
+                link="/portfolio/vcr-fulfillment"
+                />
+            </section>
+            <section className="clockWrapper">
+                <PortfolioIndexCard 
+                title={clock.title}
+                information={clock.information}
+                link="/portfolio/clock-app"
+                />
+            </section>
+            <section className="insureWrapper">
+                <PortfolioIndexCard 
+                title={insure.title}
+                information={insure.information}
+                link="/portfolio/insure"
+                />
+            </section>
+            <section className="rdwWrapper">
+                <PortfolioIndexCard 
+                title={rdw.title}
+                information={rdw.information}
+                link="/portfolio/rdw-joinery"
+                />
+            </section>
+
+           
+
             </div>
-        </PageLayout>
+
+            <CtaSection/>
+        </IndexLayout>
+        
      );
 }
  

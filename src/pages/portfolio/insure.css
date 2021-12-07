@@ -1,0 +1,31 @@
+.insureWrapper header {
+  background-image: url("../../assets/mobile/insure-hero.jpg");
+}
+
+.insureWrapper .previewOne {
+  background-image: url("../../assets/mobile/insure-preview-one.jpg");
+}
+
+.insureWrapper .previewTwo {
+  background-image: url("../../assets/mobile/insure-preview-two.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .insureWrapper header {
+    background-image: url("../../assets/tablet/insure-hero.jpg");
+  }
+
+  .insureWrapper .previewOne {
+    background-image: url("../../assets/tablet/insure-preview-one.jpg");
+  }
+
+  .insureWrapper .previewTwo {
+    background-image: url("../../assets/tablet/insure-preview-two.jpg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .insureWrapper header {
+    background-image: url("../../assets/desktop/insure-hero.jpg");
+  }
+}

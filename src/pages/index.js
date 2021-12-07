@@ -1,99 +1,50 @@
 import React from "react"
-import PageLayout from "./components/layout/layout";
-import Card from './components/card/card';
 
-import { wrapper, imgDiv, skillsDiv, cardDiv, cardWrapper } from '../styles/home.module.scss';
-import LaunchButton from './components/common/launchButton';
+import IndexLayout from "../layouts/index/index-layout";
+import '../styles/index.css';
+import AboutBtn, { PrimaryBtn } from "../ui-components/buttons/buttons";
+import CtaSection from "../ui-components/cta-section/cta-section";
+import { danny } from './../data/personal-data';
+import StyledHr from './../ui-components/styled-hr/hr';
+import Arrows from '../assets/icons/down-arrow-icon.png'
 import { Link } from "gatsby";
-import Profile from '../assets/profile.jpg';
-
-
-const cards = [
-  {
-    "id": 1,
-    "title": "RDW Joinery Services",
-    "information": "Custom multi-page site for specialist joinery client. Site is built using React, and uses Sass for styling. Dependency includes react-router-dom for routing.",
-    "link": "https://rdwjoinery.com"
-
-  },
-  {
-    "id": 2,
-    "title": "Simple Blog Template",
-    "information": "Simple blog template built with React/Gatsby, Sass and uses Contentful CMS for content creation. Includes uses of GraphQL for fetching Contentful data.",
-    "link": "https://cranky-lalande-1bd987.netlify.app/"
-  },
-  {
-    "id": 3,
-    "title": "VCR Fulfillment",
-    "information": "Client site for an office subscription coffee site. Single page site built with React. Dependencies include smooth-scroll.  ",
-    "link": "https://www.vcrfulfillment.com"
-  },
-  // {
-  //   "id": 4,
-  //   "title": "Poe & Hund Tailors",
-  //   "information": "Static landing page for Independent Tailor. The client wanted a simple site to increase their online presence to reach more potential customers.",
-  //   "link": "https://poeandhund.com"
-  // }
-]
-
 
 
 const Index = () => {
+
+  
   return ( 
-    <PageLayout>
-    <div className={wrapper}>
-
-        <div className={imgDiv}>
-          <img src={Profile} alt="" />
+    <IndexLayout>
+      <main className="main">
+        <div className="mainBgHero"></div>
+        <div className="mainContent">
+          <h1>{danny.header}</h1>
+          <Link to='#about'>
+              <AboutBtn >
+                <div>
+                  <img src={Arrows} alt="" />
+                </div>
+                <p>{danny.about}</p>
+              </AboutBtn>
+            </Link>
         </div>
+      </main>
 
-        <div>
-          <h1><span>I'm Danny</span> - a Frontend Developer based in Italy. I focus on building fast, responsive sites with a strong focus on UI and UX development, helping propel small
-          businesses to the forefront of good customer experience on the web. </h1>
-        </div>
-
-        <div className={skillsDiv}>
-          <h2>Skills</h2>
-          <ul>
-            <li>
-              <p><span>Web technologies and frameworks: </span>HTML, CSS</p>
-            </li>
-            <li>
-              <p> <span>Scripts: </span>JavaScript, jQuery, Sass </p>
-            </li>
-            <li>
-              <p> <span>UI Frameworks/Libraries: </span>React.js, Gatsby.js, Bootstrap, TailwindCSS</p>
-            </li>
-            <li>
-              <p><span>Version Control: </span>Github, Git</p>
-            </li>
-          </ul>
-        </div>
-
-        <div className={cardDiv}>
-          <h2>Latest Work</h2>
-
-          <div className={cardWrapper}>
-          {cards.map(card => (
-            <Card key={card.id}>
-              <div>
-                <img src={require(`../assets/example-${card.id}.png`).default} alt="" />
-              </div>
-              <div>
-                <h3>{card.title}</h3>
-                <p>{card.information}</p>
-                <Link style={{ position: "absolute", bottom: "20px", left: "10px", color: "#000", textDecoration: "none" }} to={card.link} target="_blank">
-                  <LaunchButton/>
-                </Link>
-              </div>
-            </Card>
-          ))}
+      <section id="about" className="about">
+        <div className="profileImg"></div>
+        <div className="profileContent">
+          <StyledHr/>
+          <h1>{danny.about}</h1>
+          <p>{danny.profile}</p>
+          <Link to="/portfolio">
+            <PrimaryBtn>go to portfolio</PrimaryBtn>
+          </Link>
+          <StyledHr/>
           </div>
+      </section>
 
-        </div>
-
-      </div>
-    </PageLayout>
+      <CtaSection/>
+    </IndexLayout>
    );
 }
  

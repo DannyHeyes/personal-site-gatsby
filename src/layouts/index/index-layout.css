@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #364532;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  margin: 0 32px;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    margin: 0 40px;
+    max-width: 699px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    max-width: 1110px;
+  }
+}

@@ -1,0 +1,49 @@
+.ctaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 450px;
+  margin: 75px auto 76px;
+}
+
+.ctaSection h1 {
+  font-size: 40px;
+  text-align: center;
+
+  margin-top: 0;
+}
+
+.ctaSection hr {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ctaSection {
+    flex-direction: unset;
+    max-width: 688px;
+  }
+
+  .ctaSection hr {
+    display: unset;
+    width: 133px;
+  }
+
+  .ctaSection h1 {
+    width: 350px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ctaSection {
+    max-width: 1110px;
+  }
+
+  .ctaSection hr {
+    width: 450px;
+    margin-right: 25px;
+  }
+}

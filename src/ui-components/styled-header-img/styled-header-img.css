@@ -1,0 +1,22 @@
+.styledHeader {
+  height: 140px;
+  width: 311px;
+
+  background-size: contain;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .styledHeader {
+    width: 689px;
+    height: 310px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .styledHeader {
+    width: 1110px;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+}
