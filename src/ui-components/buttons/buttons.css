@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.aboutButton img {
+  margin: 0 15px;
+}
+
 .aboutButton p {
   color: #fff;
   font-family: var(--body-font);
