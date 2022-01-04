@@ -11,10 +11,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .clockWrapper section {
-    flex-direction: unset;
-  }
-
   .clockWrapper header {
     background-image: url("../../assets/tablet/clock-hero.jpg");
   }
