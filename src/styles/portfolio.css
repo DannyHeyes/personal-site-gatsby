@@ -2,6 +2,7 @@
   display: grid;
   gap: 65px;
   padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .vcrWrapper .indexImg {

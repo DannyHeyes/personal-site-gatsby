@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 1440px) {
   .ctaSection {
-    max-width: 1110px;
+    max-width: unset;
   }
 
   .ctaSection hr {
