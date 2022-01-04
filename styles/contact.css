@@ -1,0 +1,92 @@
+.contactWrapper {
+  font-family: var(--body-font);
+  color: #364532;
+}
+
+.contactWrapper h1 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+}
+
+.socialIcons {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.formGroup label {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.formGroup input,
+.formGroup textarea {
+  background-color: #36453230;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: 1px solid #5fb4a2;
+}
+
+.formGroup input {
+  height: 48px;
+  text-indent: 10px;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  padding: 15px 10px;
+  font-family: inherit;
+}
+
+form button {
+  margin: 15px 0 70px 0;
+}
+
+.successMessage {
+  background-color: #36453230;
+  opacity: 0.6;
+
+  padding: 15px 5px;
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1440px) {
+  .contactWrapper .content {
+    display: unset;
+    width: 1110px;
+  }
+
+  .contactWrapper main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main p {
+    width: 635px;
+  }
+
+  form {
+    width: 635px;
+  }
+
+  .contactWrapper section {
+    display: flex;
+    justify-content: space-between;
+  }
+}

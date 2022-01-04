@@ -1,0 +1,38 @@
+.typemasterWrapper header {
+  background-image: url("../../assets/mobile/typemaster-hero.jpg");
+}
+
+.typemasterWrapper .previewOne {
+  background-image: url("../../assets/mobile/typemaster-preview-one.jpg");
+}
+
+.typemasterWrapper .previewTwo {
+  background-image: url("../../assets/mobile/typemaster-preview-two.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .typemasterWrapper header {
+    background-image: url("../../assets/tablet/typemaster-hero.jpg");
+  }
+
+  .typemasterWrapper .previewOne {
+    background-image: url("../../assets/tablet/typemaster-preview-one.jpg");
+  }
+
+  .typemasterWrapper .previewTwo {
+    background-image: url("../../assets/tablet/typemaster-preview-two.jpg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .typemasterWrapper header {
+    background-image: url("../../assets/desktop/typemaster-hero.jpg");
+  }
+
+  .typemasterWrapper .previewOne {
+    background-image: url("../../assets/desktop/typemaster-preview-one.jpg");
+  }
+  .typemasterWrapper .previewTwo {
+    background-image: url("../../assets/desktop/typemaster-preview-two.jpg");
+  }
+}
