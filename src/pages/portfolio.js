@@ -30,13 +30,6 @@ const Portfolio = () => {
                 link="/portfolio/clock-app"
                 />
             </section>
-            <section className="insureWrapper">
-                <PortfolioIndexCard 
-                title={insure.title}
-                information={insure.information}
-                link="/portfolio/insure"
-                />
-            </section>
             <section className="typemasterWrapper">
                 <PortfolioIndexCard
                 title={typemaster.title}
