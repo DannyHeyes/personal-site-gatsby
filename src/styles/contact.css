@@ -95,4 +95,11 @@ form button {
     display: flex;
     flex-direction: column;
   }
+
+  .successMessage {
+    width: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
