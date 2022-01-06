@@ -12,6 +12,7 @@ import Linkedin from '../assets/icons/linkedin-green.png';
 
 import '../styles/contact.css';
 import { SubmitBtn } from '../ui-components/buttons/buttons';
+import { classNames } from 'classnames';
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xqkwzrej");
@@ -43,21 +44,25 @@ const Contact = () => {
         <IndexLayout>
             <main>
                 <StyledHr/>
-                <h1>Get in Touch</h1>
-                <p>{danny.contact} <br /> {danny.contact2}</p>
-                <div className="socialIcons">
-                    <a target="_blank" href="https://github.com/dannyheyes">
-                        <img src={Github} alt="" />
-                    </a>
-                    <a target="_blank" href="https://twitter.com/dannyheyes">
-                        <img src={Twitter} alt="" />
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/dannyheyes/">
-                        <img src={Instagram} alt="" />
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/daniel-heyes-222234a9/">
-                        <img src={Linkedin} alt="" />   
-                    </a>    
+                <div className="flex-wrapper">
+                    <h1>Get in Touch</h1>
+                    <div className='right-float'>
+                        <p>{danny.contact} <br /> {danny.contact2}</p>
+                        <div className="socialIcons">
+                            <a target="_blank" href="https://github.com/dannyheyes">
+                                <img src={Github} alt="" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/dannyheyes">
+                                <img src={Twitter} alt="" />
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/dannyheyes/">
+                                <img src={Instagram} alt="" />
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/daniel-heyes-222234a9/">
+                                <img src={Linkedin} alt="" />   
+                            </a> 
+                        </div>   
+                    </div>
                 </div>
                 <StyledHr/>
             </main>

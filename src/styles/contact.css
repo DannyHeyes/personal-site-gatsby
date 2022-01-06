@@ -64,3 +64,35 @@ form button {
   padding: 15px 5px;
   margin-bottom: 70px;
 }
+
+@media screen and (min-width: 1440px) {
+  form {
+    width: 635px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main h1 {
+    width: 475px;
+  }
+
+  main p {
+    width: 635px;
+    margin-top: 30px;
+  }
+
+  .contactWrapper h1 {
+    font-size: 40px;
+  }
+
+  .flex-wrapper {
+    display: flex;
+  }
+
+  .right-float {
+    display: flex;
+    flex-direction: column;
+  }
+}
