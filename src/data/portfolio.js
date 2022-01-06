@@ -4,7 +4,7 @@ export const vcr = {
     information: "This project required me to build a fully responsive landing page for an recent start up. I used React and CSS through out, and designed and built the site to client specification.",
     background: "VCR Fulfillment is a early stages B2B coffee subscription start-up based in Berlin. The client wanted a simple landing page where they were able to showcase their offerings to potential clients as they build up a network. In this instance, I created the designs using Figma for mobile, tablet and desktop sizing in order to make a completely responsive site that would function well on every size device that potential clients could use.",
     technologies: "react / css",
-    label: "Front End Development"
+    label: "Frontend Development"
 }
 
 export const clock = {
@@ -30,5 +30,13 @@ export const rdw = {
     information: "This multi-page client project was built using React and CSS. It is optimised for use on all device sizes, and has a custom contact form as well as a click-to-call link. The site also has a dedicated gallery page.",
     background: "RDW Joinery approached me as they were looking to expand their online presence coming out of the pandemic. The requirements included a landing page with easy contact information, a gallery page which includes images of their previous work and finally a contact page with a custom contact form where clients can request a quote. This project was built using React, with react-router-dom for navigating between the pages.",
     technologies: "react / css",
-    label: "Front End Development"
+    label: "Frontend Development"
+}
+
+export const typemaster = {
+    title: "Typemaster",
+    information: "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page that is optimised for mobile, tablet, and desktop viewports.",
+    background: "This project was a challenge from Frontend Mentor. The platform that enables you to practice building full websites to a design and prject brief. The typemaster challenge included mobile, tablet, and desktop designs to build to in order to complete a completely responsive and functional site. This project has helped me improved my workflow using HTML and CSS.",
+    technologies: "HTML / CSS",
+    label: "Frontend Development"
 }

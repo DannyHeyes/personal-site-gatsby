@@ -21,10 +21,34 @@
   background-image: url("../assets/mobile/rdw-index.jpg");
 }
 
+.typemasterWrapper .indexImg {
+  background-image: url("../assets/mobile/typemaster-index.jpg");
+}
+
 @media screen and (min-width: 768px) {
   .clockWrapper section,
   .rdwWrapper section {
     flex-direction: row-reverse;
+  }
+
+  .vcrWrapper .indexImg {
+    background-image: url("../assets/tablet/vcr-index.jpg");
+  }
+
+  .clockWrapper .indexImg {
+    background-image: url("../assets/tablet/clock-index.jpg");
+  }
+
+  .insureWrapper .indexImg {
+    background-image: url("../assets/tablet/insure-index.jpg");
+  }
+
+  .rdwWrapper .indexImg {
+    background-image: url("../assets/tablet/rdw-index.jpg");
+  }
+
+  .typemasterWrapper .indexImg {
+    background-image: url("../assets/tablet/typemaster-index.jpg");
   }
 }
 
@@ -43,5 +67,9 @@
 
   .rdwWrapper .indexImg {
     background-image: url("../assets/desktop/rdw-index.jpg");
+  }
+
+  .typemasterWrapper .indexImg {
+    background-image: url("../assets/desktop/typemaster-index.jpg");
   }
 }
