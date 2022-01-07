@@ -29,16 +29,16 @@ const Contact = () => {
                             <div className='right-float'>
                                 <p>{danny.contact} <br /> {danny.contact2}</p>
                                 <div className="socialIcons">
-                                    <a target="_blank" href="https://github.com/dannyheyes">
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/dannyheyes">
                                         <img src={Github} alt="" />
                                     </a>
-                                    <a target="_blank" href="https://twitter.com/dannyheyes">
+                                    <a target="_blank" rel="noreferrer" href="https://twitter.com/dannyheyes">
                                         <img src={Twitter} alt="" />
                                     </a>
-                                    <a target="_blank" href="https://www.instagram.com/dannyheyes/">
+                                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/dannyheyes/">
                                         <img src={Instagram} alt="" />
                                     </a>
-                                    <a target="_blank" href="https://www.linkedin.com/in/daniel-heyes-222234a9/">
+                                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/daniel-heyes-222234a9/">
                                         <img src={Linkedin} alt="" />   
                                     </a> 
                                 </div>   
@@ -67,16 +67,16 @@ const Contact = () => {
                     <div className='right-float'>
                         <p>{danny.contact} <br /> {danny.contact2}</p>
                         <div className="socialIcons">
-                            <a target="_blank" href="https://github.com/dannyheyes">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/dannyheyes">
                                 <img src={Github} alt="" />
                             </a>
-                            <a target="_blank" href="https://twitter.com/dannyheyes">
+                            <a target="_blank" rel="noreferrer" href="https://twitter.com/dannyheyes">
                                 <img src={Twitter} alt="" />
                             </a>
-                            <a target="_blank" href="https://www.instagram.com/dannyheyes/">
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/dannyheyes/">
                                 <img src={Instagram} alt="" />
                             </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/daniel-heyes-222234a9/">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/daniel-heyes-222234a9/">
                                 <img src={Linkedin} alt="" />   
                             </a> 
                         </div>   

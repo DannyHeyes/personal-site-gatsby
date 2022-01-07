@@ -15,10 +15,10 @@ const Typemaster = () => {
         background={typemaster.background}
         url="https://dannyheyes-typemaster.netlify.app/"
 
-        left={rdw.title}
-        right={clock.title}
-        previous="/portfolio/rdw-joinery"
-        next="/portfolio/clock-app"
+        left={clock.title}
+        right={rdw.title}
+        next="/portfolio/rdw-joinery"
+        previous="/portfolio/clock-app"
         >
 
         </ProjectLayout>
