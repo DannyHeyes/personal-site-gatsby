@@ -11,7 +11,7 @@ export const clock = {
     title: "Clock App",
     short_title: "Clock",
     information: "This project was built with HTML, CSS and JavaScript. This project used JavaScript heavily, as data is fetched from multiple APIs. The information displayed is set from the user’s IP address.",
-    background: "This project was a front-end  challenge from Frontend Mentor. For this challenge, the data is set using multiple APIs. In this challenge, I was able to use asynchronous JavaScript in conjunction with the fetch method to return the information I needed. The APIs use the user’s IP address in order to set the date and time, as well as to provide quotes at the top. There are also small interactive parts of the page, such as the changing of greeting and background depending on time of day, as well as a pop-up table of information.",
+    background: "This project was a front-end  challenge from Frontend Mentor. For this challenge, the data is set using multiple APIs. In this challenge, I was able to use asynchronous JavaScript in conjunction with the fetch API. I am currently working on using the fetch() API with the aysnchronous JS to update the time continously. There are also small interactive parts of the page, such as the changing of greeting depending on time of day, as well as a pop-up table of information.",
     technologies: "html / css / js",
     label: "Interaction Design / Frontend Development"
 }

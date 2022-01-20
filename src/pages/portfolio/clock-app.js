@@ -14,7 +14,7 @@ const ClockApp = () => {
             label={clock.label}
             technologies={clock.technologies}
             background={clock.background}
-            url="#"
+            url="https://dannyheyes-clock-app.netlify.app/"
 
             left={vcr.short_title}
             right={insure.title}
