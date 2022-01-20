@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectLayout from '../../layouts/project/project-layout';
 
-import { clock, vcr, insure } from '../../data/portfolio';
+import { clock, vcr, typemaster } from '../../data/portfolio';
 
 import './clock-app.css';
 
@@ -17,9 +17,9 @@ const ClockApp = () => {
             url="https://dannyheyes-clock-app.netlify.app/"
 
             left={vcr.short_title}
-            right={insure.title}
+            right={typemaster.title}
             previous="/portfolio/vcr-fulfillment"
-            next="/portfolio/insure"
+            next="/portfolio/typemaster"
              />
         </div>
     );

@@ -1,14 +1,12 @@
 import React from 'react';
 import IndexLayout from './../layouts/index/index-layout';
-import StyledHr from './../ui-components/styled-hr/hr';
-
-import { vcr, clock, insure, rdw, typemaster } from '../data/portfolio';
-import { PrimaryBtn } from '../ui-components/buttons/buttons';
-
-import '../styles/portfolio.css';
-import { Link } from 'gatsby';
 import CtaSection from '../ui-components/cta-section/cta-section';
 import PortfolioIndexCard from '../ui-components/cards/cards';
+
+import { vcr, clock, rdw, typemaster } from '../data/portfolio';
+
+import '../styles/portfolio.css';
+
 
 
 const Portfolio = () => {
@@ -31,10 +29,11 @@ const Portfolio = () => {
                 />
             </section>
             <section className="typemasterWrapper">
-                <PortfolioIndexCard
+                <PortfolioIndexCard 
                 title={typemaster.title}
                 information={typemaster.information}
-                link="/portfolio/typemaster" />
+                link="/portfolio/typemaster"
+                />
             </section>
             <section className="rdwWrapper">
                 <PortfolioIndexCard 

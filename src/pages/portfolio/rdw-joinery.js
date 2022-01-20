@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { insure, rdw, vcr } from '../../data/portfolio'
+import { typemaster, rdw, vcr } from '../../data/portfolio'
 import ProjectLayout from '../../layouts/project/project-layout';
 
 import './rdw-joinery.css';
@@ -16,9 +16,9 @@ const RdwJoinery = () => {
             background={rdw.background}
             url="https://rdwjoinery.com"
 
-            left={insure.title}
+            left={typemaster.title}
             right={vcr.short_title}
-            previous="/portfolio/insure"
+            previous="/portfolio/typemaster"
             next="/portfolio/vcr-fulfillment"
             />
         </div>
