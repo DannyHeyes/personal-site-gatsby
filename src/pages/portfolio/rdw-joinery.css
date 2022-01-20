@@ -10,6 +10,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .rdwWrapper .ctaSection {
+    flex-direction: unset;
+  }
+
   .rdwWrapper header {
     background-image: url("../../assets/tablet/rdw-hero.jpg");
   }
